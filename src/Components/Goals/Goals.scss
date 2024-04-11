@@ -1,0 +1,64 @@
+.GoalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  border: 1px solid red;
+
+  .ImageContainer {
+    width: 100%;
+    position: relative;
+    border: 1px solid red;
+    .callcontainer {
+      background-color: white;
+      max-width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 40px 40px -15px rgba(148, 182, 206, 0.15);
+      position: absolute;
+      left:0px;
+      bottom:80px;
+      z-index: 999;
+      span {
+        position: relative;
+        bottom: 5px;
+      }
+    }
+    .img1{
+      width:100%;
+      max-width: 250px;
+      position: absolute;
+      bottom:0%;
+      right:10%;
+    }
+    .img2{
+      width:100%;
+      max-width: 250px;
+ position: absolute;
+ bottom:-150px;
+ right:60%;
+   //border: 1px solid red;
+    }
+  }
+  .textContainer > * {
+    margin-bottom: 20px;
+  }
+  .textContainer {
+    width: 100%;
+    padding: 20px ;
+    border: 1px solid red;
+    ul li {
+      color: #1b3c74;
+      padding-left: 25px;
+      line-height: 27px;
+      list-style: none;
+      background-size: contain;
+      background: url("../../data/images/svg.h2d-208731fd.png") no-repeat left
+        center;
+    }
+  }
+}
+
+
+
+
