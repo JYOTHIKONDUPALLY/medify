@@ -1,25 +1,23 @@
 import React from "react";
-import "./Header.scss";
-import Logo from "../../data/images/Group 8.svg";
-import { FiMenu } from "react-icons/fi";
+import styles from "./Header.module.css";
+import logo from "../../images/logo.png";
 const Header = () => {
   return (
-    <div className="container">
-      <div className="logoContainer">
-        <span className="toggleButton">
-          <FiMenu color="#2AA8FF" fontSize={"30px"} />
-        </span>
-        <img src={Logo} alt="Logo" width={100} />
+    <div className={styles.header}>
+      <div className={styles.logo}>
+        <img src={logo} alt="logo" />
       </div>
-      <ul className="navbar-laptop">
-        <li>Find Doctors</li>
-        <li>Hospitals</li>
-        <li>Medicines</li>
-        <li>Surgeries</li>
-        <li>Software for Provider</li>
-        <li>Facilities</li>
-      </ul>
-      <button className="button">By Bookings</button>
+      <div className={styles.nav}>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Pricing</li>
+          <li>Features</li>
+        </ul>
+      </div>
+      <div className={styles.button}>
+        <button>Download</button>
+      </div>
     </div>
   );
 };
