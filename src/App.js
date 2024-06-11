@@ -1,9 +1,11 @@
 import "./App.css";
-import Header from "./Components/Header/Header";
+import FeatureSection from "./Components/FeatureSection/featureSection";
+import HeroSection from "./Components/HeroSection/HeroSection";
 function App() {
   return (
     <div>
-      <Header />
+      <HeroSection />
+      <FeatureSection />
     </div>
   );
 }

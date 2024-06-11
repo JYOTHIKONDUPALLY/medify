@@ -1,0 +1,359 @@
+/* .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.left {
+  flex: 1;
+}
+.right {
+  flex: 1;
+}
+.customization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.features > .left {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  height: 50vw;
+  width: 50vw;
+  position: relative;
+}
+
+.features > .left > .img1 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.img2 {
+  grid-row: 3;
+  grid-column: 1;
+  justify-self: start;
+  align-self: start;
+  position: absolute;
+  top: -12%;
+  left: 0;
+  z-index: 2;
+  max-width: 80%;
+  max-height: 100%;
+}
+.img3 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: start;
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  z-index: 1;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.features > .right {
+  flex: 1;
+}
+
+.subtitle {
+  color: var(--red);
+  font-size: 18px;
+}
+
+.features > .right > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.features > .right > ul {
+  padding: 0;
+}
+
+.features > .right > ul > li {
+  font-size: 18px;
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.features > .right > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-140%);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.customization > .right > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-140%);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.advantage > .left > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-140%);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.features > .right > ul > li:nth-child(1)::before {
+  content: url("../../images/Icon (4).png");
+}
+
+.features > .right > ul > li:nth-child(2)::before {
+  content: url("../../images/cube-02.png");
+}
+
+.features > .right > ul > li:nth-child(3)::before {
+  content: url("../../images/cube-04.png");
+}
+
+li {
+  list-style: none;
+}
+.features > .right > ul > * {
+  margin-bottom: 20px;
+}
+
+.features > .right > ul > li > * {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.features > .heading {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.body {
+  color: #6e6c6c;
+}
+.advantage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.advantage > .left > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.advantage > .left > ul > li {
+  content: url("../../images/Group\ 35899.png");
+}
+.advantage > .left > ul > li > .heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.customization > .right > ul > li > .heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.customization > .right > ul > li {
+  content: url("../../images/Group\ 35899\ \(1\).png");
+}
+@media screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .features > .right > h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features {
+    display: block;
+  }
+
+  .left {
+    height: 500px;
+    width: 200px;
+    border: 2px solid black;
+  }
+  .customization {
+    display: block;
+  }
+  .advantage {
+    display: block;
+  }
+  .features > .right > subtitle {
+    font-size: 14px;
+  }
+
+  .features > .right > h1 {
+    font-size: 32px;
+  }
+} */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left,
+.right {
+  flex: 1;
+  position: relative;
+  border: 1px solid red;
+}
+.subtitle {
+  color: var(--red);
+  font-size: 18px;
+}
+h1 {
+  font-size: clamp(1em, 20vw, 3em);
+}
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+li > * {
+  margin-bottom: 5px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-140%);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features > .right > ul > li:nth-child(1)::before {
+  content: url("../../images/Icon (4).png");
+}
+
+.features > .right > ul > li:nth-child(2)::before {
+  content: url("../../images/cube-02.png");
+}
+
+.features > .right > ul > li:nth-child(3)::before {
+  content: url("../../images/cube-04.png");
+}
+
+.features > .left {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  height: 50vw;
+  width: 50vw;
+  position: relative;
+}
+
+.features > .left > .img1 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.features > .left > .img2 {
+  grid-row: 3;
+  grid-column: 1;
+  justify-self: start;
+  align-self: start;
+  position: absolute;
+  top: -12%;
+  left: 0;
+  z-index: 2;
+  max-width: 80%;
+  max-height: 100%;
+}
+.features > .left > .img3 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: start;
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  z-index: 1;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .advantage,
+  .features,
+  .customization {
+    display: block;
+  }
+
+  .features > .left,
+  .features > .right {
+    width: 100vw;
+    height: 100vh;
+  }
+  .features > .right {
+    padding: 20px;
+  }
+}
